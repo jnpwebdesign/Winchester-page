@@ -3,13 +3,6 @@ html {
     padding: 0;
 }
 
-/*
-font-family: 'Caveat', cursive;
-font-family: 'Just Another Hand', cursive;
-font-family: 'Kalam', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Shadows Into Light', cursive;*/
-
 body {
     margin: 0;
     padding: 0;
@@ -18,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #header-container {
     background-image: url("images/winchester-virginia-nightlife.jpg");
     background-size: cover;
@@ -30,7 +24,9 @@ body {
 
 .heading-text {
     margin-top: 250px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -38,51 +34,67 @@ h1 {
     padding-bottom: 0;
     margin: 0;
     background-color: #0076BC;
+    padding: 2px 12px;
 }
 
 h2 {
     font-size: 40px;
     margin: 5px;
-    background-color: blueviolet;
-
+    background-color: #450F20;
 }
 
 h1, h2 {
     text-shadow: 2px 2px 5px black;
-    
 }
 
 .cursive-font {
     font-family: 'Satisfy', cursive;
     font-size: 100px;
+    text-decoration: none;
+    color: white;
 }
 
 h3 {
     margin-top: 40px;
-    font-size: 2rem;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-decoration: underline;
 }
 
 #activites-container {
     display: flex;    
     flex-direction: row;
-    margin: 50px;
+    margin: 10px 50px 20px 50px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .activity {
-    padding: 40px;
+    padding: 10px;
+    width: 30%;
 }
 
 .activity-image {
-    width: 100px;
+    width: 250px;
     border-radius: 50%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.activity-image:hover {
+    box-shadow: 0 0 20px #0076BC;
+    transition: all 0.2s;
 }
 
 h4 {
-    font-size: 21px;
+    font-size: 27px;
 }
 
 .activity-description {
     font-size: 20px;
+    padding: 2px 20px;
+    text-align: justify;
 }
 
 #guide-container {
@@ -119,10 +131,26 @@ h4 {
 }
 h5 {
     font-size: 25px;
+    margin: 0;
 }
 
 h6 {
     font-size: 40px;
+    margin: 0;
+    padding: 0;
 }
 
+#msv-link {
+    text-decoration: none;
+    color: #0076BC;
+    font-weight: bold;
+}
 
+/*
+Imported fonts:
+font-family: 'Caveat', cursive;
+font-family: 'Just Another Hand', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
